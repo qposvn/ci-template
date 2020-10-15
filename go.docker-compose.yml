@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    container_name: webhook-api
+    image: ${DOCKER_IMAGE}
+    volumes:
+      - ./:/app
+    ports:
+      - 58000:8000
